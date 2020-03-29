@@ -7,4 +7,5 @@ from rest_framework import serializers
 
 class DoctorSerialize(serializers.ModelSerializer):
     class Meta:
-        field = ['id', 'doctor_name', 'doctor_address', 'id_specialist']
+        model = Doctor
+        fields = ['id', 'doctor_name', 'doctor_address', 'id_specialist']

@@ -4,4 +4,5 @@ from .models import Specialist
 
 class SpecialistSerialize(serializers.ModelSerializer):
     class Meta:
-        field = ['id', 'specialist_name', 'specialist_desc']
+        model = Specialist
+        fields = ['id', 'specialist_name', 'specialist_desc']
